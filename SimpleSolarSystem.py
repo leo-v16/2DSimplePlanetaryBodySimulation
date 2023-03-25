@@ -26,12 +26,15 @@ class Body:
 # endregion
 
 # region main logic                                #centre    #net_force
-bodies = np.array([Body("sun", 60250, 25, "yellow", (750, 400), (10000, 0)),
+bodies = np.array([Body("sun", 60250, 25, "yellow", (750, 400), (0, 0)),
                    Body("mercury", 1.0, 2.5, "grey", (800, 400), (0, 8)),
-                   Body("venus", 14.7, 5, "green", (500, 400), (0, -50)),
-                   Body("earth", 18.0, 6, "blue", (900, 400), (0, 70)),
-                   Body("mars", 1.9, 3.5, "red", (600, 400), (0, 10)),
-                   Body("jupiter", 50, 12, "purple", (1000, 400), (0, -200))])
+                   Body("venus", 14.7, 5, "green", (450, 400), (0, -45)),
+                   Body("earth", 100.0, 6, "blue", (900, 400), (0, 450)),
+                   Body("moon", 0.00001, 1, "white", (892, 400), (0, 0.0000532)),
+                   Body("mars", 1.9, 3.5, "red", (550, 400), (0, 7.5)),
+                   Body("jupiter", 200, 12, "purple", (1100, 400), (0, -600)),
+                   Body("Europa", 0.01, 1.5, "white", (1070, 400), (0, -0.0365)),
+                   Body("Ganymede", 0.01, 2.6, "white", (1080, 400), (0, -0.02367))])
 
 
 def move_bodies():
