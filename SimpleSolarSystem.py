@@ -25,20 +25,20 @@ class Body:
 
 # endregion
 
-# region main logic
-bodies = np.array([Body("sun", 6025, 25, "yellow", (75, 400), (1000, 0)),
-                   Body("mercury", 1.0, 2.5, "grey", (125, 400), (0, 8)),
-                   Body("venus", 14.7, 5, "green", (375, 400), (0, -37)),
-                   Body("earth", 18.0, 6, "blue", (525, 400), (0, 37)),
-                   Body("mars", 1.9, 3.5, "red", (625, 400), (0, 3)),
-                   Body("jupiter", 50, 12, "purple", (825, 400), (0, -80))])
+# region main logic                                #centre    #net_force
+bodies = np.array([Body("sun", 60250, 25, "yellow", (750, 400), (10000, 0)),
+                   Body("mercury", 1.0, 2.5, "grey", (800, 400), (0, 8)),
+                   Body("venus", 14.7, 5, "green", (500, 400), (0, -50)),
+                   Body("earth", 18.0, 6, "blue", (900, 400), (0, 70)),
+                   Body("mars", 1.9, 3.5, "red", (600, 400), (0, 10)),
+                   Body("jupiter", 50, 12, "purple", (1000, 400), (0, -200))])
 
 
 def move_bodies():
     global bodies
 
     def force(b1: Body, b2: Body):
-        G = 0.5
+        G = 0.05
         M = b1.mass
         m = b2.mass
         d = np.linalg.norm(b1.centre - b2.centre)
