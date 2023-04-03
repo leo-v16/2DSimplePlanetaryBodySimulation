@@ -26,7 +26,7 @@ class Body:
 # endregion
 
 # region main logic                                #centre    #net_force
-bodies = np.array([Body("sun", 60250, 25, "yellow", (750, 400), (0, 0)),
+bodies = np.array([Body("sun", 60250, 25, "yellow", (750, 400), (0, 180)),
                    Body("mercury", 1.0, 2.5, "grey", (800, 400), (0, 8)),
                    Body("venus", 14.7, 5, "green", (450, 400), (0, -45)),
                    Body("earth", 100.0, 6, "blue", (900, 400), (0, 450)),
